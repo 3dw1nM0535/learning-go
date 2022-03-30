@@ -1,2 +1,2 @@
 # learning go
-This is my golang diary
+This is my golang test-driven-development learning diary
