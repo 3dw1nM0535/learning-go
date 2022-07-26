@@ -28,7 +28,7 @@ func ConfigurableRacer(a, b string, timeout time.Duration) (winner string, err e
 
 func ping(url string) chan struct{} {
 	// channel of type struct require no memory allocation
-	// making the process abit faster
+	// making writes to it abit faster
 	ch := make(chan struct{})
 	go func() {
 		http.Get(url)
